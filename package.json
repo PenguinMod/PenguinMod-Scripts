@@ -1,0 +1,23 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "Scripts to help when developing PenguinMod",
+  "main": "index.js",
+  "scripts": {
+    "cloneDev": "node ./CloneDevelop/index.js",
+    "dlBlocks": "node ./BlocksDownloader/index.js",
+    "compileBlocks": "node ./BlocksCompiler/index.js",
+    "link": "node ./LinkRepos/index.js",
+    "install": "cd BlocksCompiler && npm i && cd ../BlocksDownloader && npm i && cd ../CloneDevelop && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PenguinMod/PenguinMod-Scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PenguinMod/PenguinMod-Scripts/issues"
+  },
+  "homepage": "https://github.com/PenguinMod/PenguinMod-Scripts#readme"
+}

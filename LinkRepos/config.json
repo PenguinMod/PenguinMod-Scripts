@@ -1,0 +1,16 @@
+{
+    "gui": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-gui",
+    "packager": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-packager",
+    "audio": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-audio",
+    "blocks": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-blocks",
+    "paint": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-paint",
+    "parser": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-parser",
+    "render": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-render",
+    "render-fonts": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-render-fonts",
+    "storage": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-storage",
+    "vm": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch/scratch-vm",
+    "entryPoints": [
+        "gui",
+        "packager"
+    ]
+}

@@ -1,8 +1,8 @@
 {
-    "real_blocks_path": "C:\\Users\\User\\Documents\\_LocalPenguinMod\\PenguinMod-Blocks",
-    "vm_blocks_path": "C:\\Users\\User\\Documents\\_LocalPenguinMod\\PenguinMod-Vm\\node_modules\\scratch-blocks",
-    "gui_blocks_path": "C:\\Users\\User\\Documents\\_LocalPenguinMod\\penguinmod.github.io\\node_modules\\scratch-blocks",
-    "gui_blocks_media_path": "C:\\Users\\User\\Documents\\_LocalPenguinMod\\penguinmod.github.io\\node_modules\\scratch-blocks\\media",
-    "vm_blocks_media_path": "C:\\Users\\User\\Documents\\_LocalPenguinMod\\PenguinMod-Vm\\node_modules\\scratch-blocks\\media",
+    "real_blocks_path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-blocks",
+    "vm_blocks_path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-vm/node_modules/scratch-blocks",
+    "gui_blocks_path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-gui/node_modules/scratch-blocks",
+    "gui_blocks_media_path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-gui/node_modules/scratch-blocks/media",
+    "vm_blocks_media_path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-vm/node_modules/scratch-blocks/media",
     "shouldRecompile": true
 }
