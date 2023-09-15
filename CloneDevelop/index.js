@@ -1,17 +1,8 @@
 const fs = require('fs')
-const devCompany = 'PenguinMod-Dev'
-const repos = [
-    'audio',
-    'blocks',
-    ['penguinmod-dev.github.io', 'scratch-gui'],
-    'packager',
-    'paint',
-    'parser',
-    'render',
-    ['penguinmod-render-fonts', 'scratch-render-fonts'],
-    'storage',
-    'vm'
-]
+const conf = require('./config.json')
+const {exec} = require("child_process");
+const repos = conf.repos
+const devCompany = conf.src
 const fileExists = path => 
     new Promise(resolve => {
         fs.access(path, fs.constants.R_OK | fs.constants.W_OK | fs.constants.F_OK, err => {
@@ -21,17 +12,15 @@ const fileExists = path =>
 
 const ittr = async idx => {
     const repo = repos[idx]
-    const source = Array.isArray(repo)
-        ? `${devCompany}/${repo[0]}`
-        : `${devCompany}/PenguinMod-${repo.toUpperCase()}`
-    const dest = Array.isArray(repo)
-        ? `../../${repo[1]}`
-        : `../../scratch-${repo}`
+    if (!repo) return
+    const repoData = conf[repo]
+    const dest = repoData.path
+    const source = `${devCompany}/${repoData.repo}`
 
     idx++
     const exists = await fileExists(dest)
     if (exists) {
-        console.log('skiping', repo[0] ?? repo)
+        console.log('skiping', repo)
         return ittr(idx)
     }
     exec(`gh repo clone "${source}" "${dest}"`, (error, stdout, stderr) => {
@@ -41,7 +30,6 @@ const ittr = async idx => {
         }
         if (stderr) {
             console.log(`stderr: ${stderr}`)
-            return
         }
         console.log(stdout)
         ittr(idx)
