@@ -30,6 +30,7 @@ const ittr = async idx => {
         }
         if (stderr) {
             console.log(`stderr: ${stderr}`)
+            console.log('while trying to clone', source)
         }
         console.log(stdout)
         ittr(idx)
