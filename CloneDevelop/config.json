@@ -1,42 +1,42 @@
 {
     "gui": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-gui",
-        "repo": "penguinmod-dev.github.io"
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-gui",
+        "repo": "penguinmod.github.io"
     },
     "packager": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-packager",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-packager",
         "repo": "PenguinMod-Packager"
     },
     "audio": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-audio",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-audio",
         "repo": "PenguinMod-Audio"
     },
     "blocks": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-blocks",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-blocks",
         "repo": "PenguinMod-Blocks"
     },
     "paint": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-paint",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-paint",
         "repo": "PenguinMod-Paint"
     },
     "parser": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-parser",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-parser",
         "repo": "PenguinMod-Parser"
     },
     "render": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-render",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-render",
         "repo": "PenguinMod-Render"
     },
     "render-fonts": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-render-fonts",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-render-fonts",
         "repo": "penguinmod-render-fonts"
     },
     "storage": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-storage",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-storage",
         "repo": "PenguinMod-Storage"
     },
     "vm": {
-        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-dev/scratch-vm",
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-vm",
         "repo": "PenguinMod-Vm"
     },
     "repos": [
@@ -51,5 +51,5 @@
         "packager",
         "gui"
     ],
-    "src": "PenguinMod-Dev"
+    "src": "PenguinMod"
 }

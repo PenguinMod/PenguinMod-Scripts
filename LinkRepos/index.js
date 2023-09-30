@@ -29,7 +29,7 @@ const ittr = async entry => {
             console.log(`stderr: ${stderr}`)
             return
         }
-        console.log('dependencies installed.')
+        console.log(`dependencies installed for ${entry}.`)
         const packagePath = path.join(conf[entry], 'package.json')
         const packJson = require(packagePath)
         const dependencies = Object.values(Object.assign({}, packJson.dependencies, packJson.devDependencies))
