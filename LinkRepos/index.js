@@ -32,18 +32,18 @@ const ittr = async entry => {
         console.log(`dependencies installed for ${entry}.`)
         const packagePath = path.join(conf[entry], 'package.json')
         const packJson = require(packagePath)
-        const dependencies = Object.values(Object.assign({}, packJson.dependencies, packJson.devDependencies))
-            .filter(package => package.startsWith('github:PenguinMod') || package.startsWith('git+https://github.com/PenguinMod'))
+        const dependencies = Object.entries(Object.assign({}, packJson.dependencies, packJson.devDependencies))
+            .filter(package => package[1].startsWith('github:PenguinMod') || package[1].startsWith('git+https://github.com/PenguinMod'))
             .map(package => {
-                const match = package.match(pmLink)
+                const match = package[1].match(pmLink)
                 const name = match[3].toLowerCase()
-                return [name, conf[name]]
+                return [name, conf[name], package[0]]
             })
         
         for (const dep of dependencies) {
-            const [name, src] = dep
-            console.log('linking', name)
-            const dest = path.join(conf[entry], 'node_modules', `scratch-${name}`)
+            const [name, src, module] = dep
+            console.log('linking', name, 'to', entry)
+            const dest = path.join(conf[entry], 'node_modules', module)
             fs.rmSync(dest, {
                 recursive: true
             })

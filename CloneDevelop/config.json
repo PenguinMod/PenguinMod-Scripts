@@ -39,7 +39,12 @@
         "path": "/home/godlsayerakp/Documents/repos/PenguinMod/scratch-vm",
         "repo": "PenguinMod-Vm"
     },
+    "markdown": {
+        "path": "/home/godlsayerakp/Documents/repos/PenguinMod/PenguinMod-MarkDown",
+        "repo": "PenguinMod-MarkDown"
+    },
     "repos": [
+        "markdown",
         "vm",
         "storage",
         "render-fonts",
