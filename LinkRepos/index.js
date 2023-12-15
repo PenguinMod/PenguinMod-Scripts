@@ -18,6 +18,10 @@ const ittr = async entry => {
             recursive: true
         })
     }
+    if (await fileExists(path.join(conf[entry], 'package-lock.json'))) {
+        console.log(`removing old package-lock.json from ${entry}... please wait`)
+        fs.rmSync(path.join(conf[entry], 'package-lock.json'))
+    }
     console.log(`intalling dependencies for ${entry}... please wait`)
     exec('npm i --force', {cwd: conf[entry]}, (error, stdout, stderr) => {
         if (error) {
