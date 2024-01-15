@@ -1,0 +1,16 @@
+{
+    "main_path": "C:\\Users\\User\\Documents\\_LocalPenguinMod",
+    "remove_packagelock": true,
+    "folders": [
+        "penguinmod.github.io",
+        "PenguinMod-Audio",
+        "PenguinMod-Blocks",
+        "PenguinMod-Packager",
+        "PenguinMod-Paint",
+        "PenguinMod-Parser",
+        "PenguinMod-Render",
+        "penguinmod-render-fonts",
+        "PenguinMod-Storage",
+        "PenguinMod-Vm"
+    ]
+}
