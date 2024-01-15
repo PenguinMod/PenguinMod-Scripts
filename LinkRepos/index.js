@@ -43,6 +43,7 @@ const ittr = async entry => {
                 const name = match[3].toLowerCase()
                 return [name, conf[name], package[0]]
             })
+            .filter(([_, path]) => path)
         
         for (const dep of dependencies) {
             const [name, src, module] = dep
