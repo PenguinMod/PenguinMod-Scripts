@@ -26,7 +26,7 @@ const func = async () => {
         console.log('API failed to respond properly, restarting');
         try {
             childProcess.execSync('sudo systemctl restart penguinmod-api');
-            await wait(3000); // specially requested by josh :bleh:
+            await wait(3000); // systemctl wants some delay for some reason, so we give it that
             childProcess.execSync('sudo systemctl restart cloudflared');
             console.log('API should be restarted!');
         } catch (err) {
