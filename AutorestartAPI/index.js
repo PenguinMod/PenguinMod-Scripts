@@ -20,7 +20,7 @@ const func = async () => {
         worked = false;
     }
     if (worked) {
-        worked = response.status < 200 || response.status >= 300;
+        worked = !(response.status < 200 || response.status >= 300);
     }
     if (!worked) {
         console.log('API failed to respond properly, restarting');
