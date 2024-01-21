@@ -1,0 +1,15 @@
+{
+    "gui": "C:/Users/User/Documents/_LocalPenguinMod/penguinmod.github.io",
+    "markdown": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-MarkDown",
+    "packager": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-Packager",
+    "audio": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-Audio",
+    "paint": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-Paint",
+    "render": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-Render",
+    "render-fonts": "C:/Users/User/Documents/_LocalPenguinMod/penguinmod-render-fonts",
+    "storage": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-Storage",
+    "vm": "C:/Users/User/Documents/_LocalPenguinMod/PenguinMod-Vm",
+    "entryPoints": [
+        "gui",
+        "packager"
+    ]
+}
