@@ -3,3 +3,6 @@ node_modules/*
 
 # BlocksCompiler
 BlocksCompiler/_last_compilation.js
+
+# HomeCountryNameMixer
+HomeCountryNameMixer/langs/*

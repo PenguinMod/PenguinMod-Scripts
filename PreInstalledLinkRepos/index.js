@@ -2,7 +2,7 @@ const fs = require('fs')
 const { exec } = require("child_process");
 const path = require('path')
 const conf = require('./config.json')
-const pmLink = /^(github:PenguinMod|git\+https:\/\/github\.com\/PenguinMod)(-Dev)?\/PenguinMod-([\w-]+)(.git)?#[\w-]+$/i
+const pmLink = /^(github:PenguinMod|git\+https:\/\/github\.com\/PenguinMod)(-Dev)?\/PenguinMod-([\w-]+)(.git)?(#[\w-]+|)$/i
 const fileExists = path =>
     new Promise(resolve => {
         fs.access(path, fs.constants.R_OK | fs.constants.W_OK | fs.constants.F_OK, err => {
@@ -31,7 +31,7 @@ const ittr = async entry => {
         if (name === 'render-fonts') {
             console.log(src, dest);
         }
-        fs.rmSync(dest, {
+        if (fs.existsSync(dest)) fs.rmSync(dest, {
             recursive: true
         })
         fs.symlinkSync(src, dest)
